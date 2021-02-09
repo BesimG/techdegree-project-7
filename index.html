@@ -2,12 +2,13 @@
 <html>
     <head>
         <title>Web App Dashboard</title>
+        <link rel="stylesheet" href="style.css">
     </head>
         
     <body>
         <header>
             <h1>YourApp&trade;</h1>
-            <div>
+            <div class="bell">
                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
 <style type="text/css">
@@ -27,12 +28,68 @@
         </header>
 
         <div class="nav">
-
+            <!-- leftside navbar -->
+            <a href="#"><img src="icons/icon-dashboard.svg" alt="Dashboard icon"></a>
+            <a href="#"><img src="icons/icon-members.svg" alt="Members icon"></a>
+            <a href="#"><img src="icons/icon-visits.svg" alt="Visits icon"></a>
+            <a href="#"><img src="icons/icon-settings.svg" alt="Settings icon"></a>
         </div>
 
         <div class="main">
-
+            <!-- dashboard row -->
+            <div class="main-header">
+                <h2 class="headline">Dashboard</h2>
+                <div class="main-header-search">
+                    <input type="search" placeholder="Search">
+                </div>
+            </div>
+            <!-- alert banner -->
+            <div class="alert" id="alert">
+                <!-- JS will take care of this -->
+            </div>
+            <!-- Line graph charts -->
+            <section class="traffic" id="traffic">
+                <div class="traffic-header">
+                    <h3>Traffic</h3>
+                    <ul class="traffic-nav">
+                        <li class="traffic-nav-link">Hourly</li>
+                        <li class="traffic-nav-link">Daily</li>
+                        <li class="traffic-nav-link active">Weekly</li>
+                        <li class="traffic-nav-link">Monthly</li>
+                    </ul>
+                </div>
+                <div class="widget-container-full">
+                    <!-- element line graph will attach to -->
+                    <canvas id="traffic-chart"></canvas>
+                </div>
+            </section>
         </div>
     </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="row">
+                <div class="col 1">
+
+                </div>
+                <div class="col 2">
+                    
+                </div>
+                <div class="col 3">
+                    
+                </div>
+            </div>
+        </div> -->
