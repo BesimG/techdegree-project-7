@@ -2,7 +2,9 @@
 /* ================================= 
   Base Element Styles
 ==================================== */
-
+body{
+  background-color: pink;
+}
 
 /* ================================= 
   Base Layout Styles
