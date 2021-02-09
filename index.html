@@ -47,8 +47,8 @@
             <div class="alert" id="alert">
                 <!-- JS will take care of this -->
             </div>
-            <!-- Line graph charts -->
-            <section class="traffic" id="traffic">
+            <!-- Line graph chart -->
+            <section class="traffic">
                 <div class="traffic-header">
                     <h3>Traffic</h3>
                     <ul class="traffic-nav">
@@ -59,10 +59,27 @@
                     </ul>
                 </div>
                 <div class="widget-container-full">
-                    <!-- element line graph will attach to -->
+                    <!-- line graph will attach to this -->
                     <canvas id="traffic-chart"></canvas>
                 </div>
             </section>
+            <!-- bar graph -->
+            <section class="daily">
+                <h3>Daily Traffic</h3>
+                <div class="widget-container-half">
+                    <!-- bar graph will attach to this -->
+                    <canvas id="daily-chart"></canvas>
+                </div>
+            </section>
+            <!-- dougnut chart -->
+            <section class="mobile">
+                <h3>Mobile Users</h3>
+                <div class="widget-container-half">
+                    <!-- dougnut chart will attach to this -->
+                    <canvas id="mobile-chart"></canvas>
+                </div>
+            </section>
+
         </div>
     </body>
 
