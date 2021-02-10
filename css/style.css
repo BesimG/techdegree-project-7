@@ -1,12 +1,16 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
 
 /* ================================= 
   Base Element Styles
 ==================================== */
-/* test css code */
-body {
-  background-color: pink;
-}
 
+body {
+  font-family: 'Roboto', sans-serif;
+}
+/* test css code */
 .bell,
 header img,
 nav a img {
@@ -38,20 +42,23 @@ nav a img {
   grid-template-columns: 100%;
   grid-template-rows: auto;
   grid-template-areas: 
-    "header", 
-    "nav", 
+    "header" 
+    "nav" 
     "main";
 }
-.header {
+header {
   grid-area: header;
+  background-color: blue;
 }
 
-.nav {
+nav {
   grid-area: nav;
+  background-color: purple;
 }
 
-.main {
+main {
   grid-area: main;
+  background-color: lightblue;
 }
 /* ---- Page Elements ---- */
 
