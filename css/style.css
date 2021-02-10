@@ -9,17 +9,45 @@
 
 body {
   width: 100%;
+  letter-spacing: 1px;
   font-family: 'Roboto', sans-serif;
 }
 
-header img,
-header h3 {
-  justify-content: flex-end;
+h1 {
+  font-size: 22px;
+  margin-right: auto;
+  margin-left: 10px;
 }
 
-/* test css code */
-.bell,
-header img,
+h3 {
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+header .bell {
+  height: 22px;
+}
+
+header p {
+  font-size: 30px;
+  font-weight: 100;
+}
+
+header img {
+  border-radius: 40px;
+  height: 30px;
+  margin: 0 5px 0 5px;
+}
+
+nav a:nth-of-type(1) {
+  margin-left: 0;
+}
+
+nav a {
+  margin-left: 10px;
+}
+
+/*------ test css code ------*/
 nav a img {
   height: 20px;
 }
@@ -32,7 +60,7 @@ nav a img {
 .social-image img {
   height: 40px;
 }
-/* end of test code */
+/*------ end of test code ------*/
 
 
 /* ================================= 
@@ -41,18 +69,20 @@ nav a img {
 /* ---- Header ---- */
 .bold-h1 {
   font-weight: 700;
-  color: white;
 }
 
 .light-h1 {
   font-weight: 100;
+}
+
+.bold-h1,
+.light-h1 {
   color: white;
 }
 
 /* ---- Navigation ---- */
-.main-header {
-  justify-content: space-around;
-}
+
+
 
 /* ---- Layout Containers ---- */
 
@@ -66,10 +96,11 @@ nav a img {
     "main";
 }
 header {
+  height: 45px;
   grid-area: header;
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
+  align-items: center;
   background-color: blue;
 }
 
@@ -83,8 +114,8 @@ nav {
 
 main {
   grid-area: main;
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
   background-color: lightblue;
 }
 /* ---- Page Elements ---- */
@@ -121,8 +152,8 @@ main {
 
 /* ---- Float clearfix ---- */
 
-.clearfix::after {
+/* .clearfix::after {
     content: " ";
     display: table;
     clear: both;
-}
+} */
