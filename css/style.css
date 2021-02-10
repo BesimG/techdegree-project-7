@@ -6,6 +6,11 @@ body{
   background-color: pink;
 }
 
+/* testing position of js graph/chart */
+.image-test{
+  height: 200px;
+}
+
 /* ================================= 
   Base Layout Styles
 ==================================== */
