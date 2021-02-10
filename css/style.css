@@ -2,14 +2,26 @@
 /* ================================= 
   Base Element Styles
 ==================================== */
-body{
+/* test css code */
+body {
   background-color: pink;
 }
 
+.bell,
+header img,
+nav a img {
+  height: 20px;
+}
+
 /* testing position of js graph/chart */
-.image-test{
+.image-test {
   height: 200px;
 }
+
+.social-image img {
+  height: 40px;
+}
+/* end of test code */
 
 /* ================================= 
   Base Layout Styles
