@@ -8,8 +8,15 @@
 ==================================== */
 
 body {
+  width: 100%;
   font-family: 'Roboto', sans-serif;
 }
+
+header img,
+header h3 {
+  justify-content: flex-end;
+}
+
 /* test css code */
 .bell,
 header img,
@@ -31,9 +38,21 @@ nav a img {
 /* ================================= 
   Base Layout Styles
 ==================================== */
+/* ---- Header ---- */
+.bold-h1 {
+  font-weight: 700;
+  color: white;
+}
+
+.light-h1 {
+  font-weight: 100;
+  color: white;
+}
 
 /* ---- Navigation ---- */
-
+.main-header {
+  justify-content: space-around;
+}
 
 /* ---- Layout Containers ---- */
 
@@ -48,16 +67,24 @@ nav a img {
 }
 header {
   grid-area: header;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   background-color: blue;
 }
 
 nav {
   grid-area: nav;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   background-color: purple;
 }
 
 main {
   grid-area: main;
+  display: flex;
+  flex-direction: column;
   background-color: lightblue;
 }
 /* ---- Page Elements ---- */
