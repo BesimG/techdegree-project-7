@@ -63,13 +63,6 @@ section h3 {
   margin-left: 10px;
 }
 
-/*------ test css code ------*/
-
-/* testing position of js graph/chart */
-.social-image img {
-  height: 40px;
-}
-/*------ end of test code ------*/
 
 
 /* ================================= 
@@ -82,7 +75,7 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: blue;
+  background-color: rgb(144, 144, 255);
 }
 
 .bold-h1 {
@@ -97,7 +90,9 @@ header {
 .light-h1 {
   color: white;
 }
-
+.st0 {
+  fill: white;
+}
 /* ---- Navigation ---- */
 nav {
   height: 40px;
@@ -106,7 +101,7 @@ nav {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: purple;
+  background-color: rgb(102, 102, 155);
 }
 
 /* ---- Main ---- */
@@ -155,10 +150,10 @@ main {
 }
 
 .traffic-nav-link:nth-of-type(3){
-  background-color: green;
+  background-color: rgb(3, 174, 3);
   color: white;
   border-radius: 20px;
-  padding: 5px;
+  padding: 7px;
 }
 
 .widget-container-full {
@@ -166,23 +161,67 @@ main {
 }
 
 .widget-container-half {
-  background-color: red;
+  background-color: tomato;
 }
 
 .social-stats {
   display: flex;
-  flex-direction: row;
+  margin-bottom: 20px;
   justify-content: center;
-  
 }
 
 .social-container {
-  background-color: orange;
-  margin-right: 20px;
-  border: 2px solid black;
-  padding: 10px;
+  background-color: rgb(245, 245, 245);
+  margin-right: 16px;
+  border: 1px solid rgb(79, 79, 79);
+  padding: 15px 12px;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
 }
 
+.social-container:last-of-type {
+  margin-right: 0;
+}
+
+.social-image {
+  background: rgb(144, 144, 255);
+  border-radius: 50%;
+  padding: 7px;
+  /* display: flex;
+  align-items: center; */
+}
+
+.social-svg {
+  height: 30px;
+  justify-content: flex;
+  /* fill: white; */
+}
+
+/* .social-svg:first-of-type,
+.social-svg:last-of-type {
+  padding-right: 7px;
+} */
+
+.social-text p {
+  justify-content: center;
+}
+
+.social-text p:first-child {
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.social-text p:last-child {
+  font-weight: 100;
+  font-size: 24px;
+}
+
+.members {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
 
 /* ------------ Media Queries 768px -------------- */
 
