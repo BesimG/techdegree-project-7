@@ -20,8 +20,12 @@ h1 {
 }
 
 h3 {
-  font-size: 16px;
+  font-size: 13px;
   margin-right: 10px;
+}
+
+header h3 {
+  color: white;
 }
 
 header .bell {
@@ -34,23 +38,23 @@ header p {
 }
 
 header img {
-  border-radius: 40px;
+  border-radius: 50px;
   height: 30px;
+  width: 30px;
   margin: 0 5px 0 5px;
 }
 
 nav a:nth-of-type(1) {
   margin-left: 0;
+  text-decoration: underline;
 }
 
-nav a {
+nav a img {
   margin-left: 10px;
+  height: 28px;
 }
 
 /*------ test css code ------*/
-nav a img {
-  height: 20px;
-}
 
 /* testing position of js graph/chart */
 .image-test {
@@ -95,6 +99,7 @@ nav a img {
     "nav" 
     "main";
 }
+
 header {
   height: 45px;
   grid-area: header;
@@ -105,17 +110,19 @@ header {
 }
 
 nav {
+  height: 40px;
   grid-area: nav;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   background-color: purple;
 }
 
 main {
   grid-area: main;
-  /* display: flex;
-  flex-direction: column; */
+  display: flex;
+  flex-direction: column;
   background-color: lightblue;
 }
 /* ---- Page Elements ---- */
