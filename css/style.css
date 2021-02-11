@@ -19,6 +19,10 @@ h1 {
   margin-left: 10px;
 }
 
+h2 {
+  font-size: 18px;
+}
+
 h3 {
   font-size: 13px;
   margin-right: 10px;
@@ -54,6 +58,10 @@ nav a img {
   height: 28px;
 }
 
+section h3 {
+  margin-left: 10px;
+}
+
 /*------ test css code ------*/
 
 /* testing position of js graph/chart */
@@ -86,8 +94,30 @@ nav a img {
 
 /* ---- Navigation ---- */
 
+/* ---- Main ---- */
+.headline {
+  margin-left: 15px;
+}
 
+.traffic-nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 15px;
+}
 
+.traffic-nav li {
+  list-style: none;
+  font-size: 13px;
+  margin-right: 7px;
+}
+
+.traffic-nav-link:nth-of-type(3){
+  background-color: green;
+  color: white;
+  border-radius: 20px;
+  padding: 5px;
+}
 /* ---- Layout Containers ---- */
 
 .grid-container {
@@ -123,7 +153,26 @@ main {
   grid-area: main;
   display: flex;
   flex-direction: column;
+  /* background-color: lightblue; */
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.widget-container-full {
   background-color: lightblue;
+}
+
+.widget-container-half {
+  background-color: red;
+}
+
+.social-container {
+  background-color: orange;
 }
 /* ---- Page Elements ---- */
 
