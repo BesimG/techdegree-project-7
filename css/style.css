@@ -226,18 +226,40 @@ main {
   display: flex;
   flex-direction: column;
   margin-left: 10px;
+  margin-bottom: 20px;
+  border-top: 1px solid rgba(79, 79, 79, 0.3);
+  border-bottom: 1px solid rgba(79, 79, 79, 0.3);
 }
 
-.members-container {
+.members h3,
+.recent-activity h3 {
+  margin: 20px 0;
+}
+
+.members-container,
+.activity-container {
   display: flex;
-  border-bottom: 1px solid rgb(79, 79, 79);
+  align-items: center;
+  /* margin-bottom: 10px; */
+  border-bottom: 1px solid rgba(79, 79, 79, 0.3);
+}
+
+.members-container:last-of-type,
+.activity-container:last-of-type {
+  border-bottom: none;
 }
 
 .profile-image {
   height: 50px;
+  margin-bottom: 10px;
   border-radius: 50%;
 }
 
+.members-text,
+.activity-text {
+  margin-left: 5px;
+  font-size: 12px;
+}
 /* ------------ Media Queries 768px -------------- */
 
 /* ================================= 
