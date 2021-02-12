@@ -35,6 +35,7 @@ header h3 {
 
 header .bell {
   height: 22px;
+  margin-top: 5px;
 }
 
 header p {
@@ -62,9 +63,6 @@ nav a img {
 section h3 {
   margin-left: 10px;
 }
-
-
-
 /* ================================= 
   Base Layout Styles
 ==================================== */
@@ -167,7 +165,7 @@ main {
 .social-stats {
   display: flex;
   margin-bottom: 20px;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .social-container {
@@ -198,11 +196,6 @@ main {
   /* fill: white; */
 }
 
-/* .social-svg:first-of-type,
-.social-svg:last-of-type {
-  padding-right: 7px;
-} */
-
 .social-text {
   display: flex;
   flex-direction: column;
@@ -228,25 +221,12 @@ main {
   margin-left: 10px;
   margin-bottom: 20px;
   border-top: 1px solid rgba(79, 79, 79, 0.3);
-  border-bottom: 1px solid rgba(79, 79, 79, 0.3);
+  font-size: 11px;
 }
 
 .members h3,
 .recent-activity h3 {
   margin: 20px 0;
-}
-
-.members-container,
-.activity-container {
-  display: flex;
-  align-items: center;
-  /* margin-bottom: 10px; */
-  border-bottom: 1px solid rgba(79, 79, 79, 0.3);
-}
-
-.members-container:last-of-type,
-.activity-container:last-of-type {
-  border-bottom: none;
 }
 
 .profile-image {
@@ -258,7 +238,34 @@ main {
 .members-text,
 .activity-text {
   margin-left: 5px;
-  font-size: 12px;
+  margin-right: auto;
+}
+
+.members-text a {
+  text-decoration: none;
+}
+
+.members-container p {
+  display: flex;
+  margin-right: 5px;
+}
+
+.members-container,
+.activity-container {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(79, 79, 79, 0.3);
+}
+
+.members-container:last-of-type,
+.activity-container:last-of-type {
+  border-bottom: none;
+}
+
+.widget-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
 }
 /* ------------ Media Queries 768px -------------- */
 
