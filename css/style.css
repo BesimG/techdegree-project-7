@@ -178,6 +178,7 @@ main {
   border-radius: 7px;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .social-container:last-of-type {
@@ -188,8 +189,7 @@ main {
   background: rgb(144, 144, 255);
   border-radius: 50%;
   padding: 7px;
-  /* display: flex;
-  align-items: center; */
+  display: flex;
 }
 
 .social-svg {
@@ -203,13 +203,17 @@ main {
   padding-right: 7px;
 } */
 
-.social-text p {
+.social-text {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .social-text p:first-child {
   font-weight: 700;
   font-size: 12px;
+  margin: 4px 0;
 }
 
 .social-text p:last-child {
@@ -217,10 +221,21 @@ main {
   font-size: 24px;
 }
 
-.members {
+.members,
+.recent-activity {
   display: flex;
   flex-direction: column;
-  margin: auto;
+  margin-left: 10px;
+}
+
+.members-container {
+  display: flex;
+  border-bottom: 1px solid rgb(79, 79, 79);
+}
+
+.profile-image {
+  height: 50px;
+  border-radius: 50%;
 }
 
 /* ------------ Media Queries 768px -------------- */
