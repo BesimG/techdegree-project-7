@@ -263,9 +263,25 @@ main {
 }
 
 .widget-container {
+  width: 90%;
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
+}
+
+.widget-container:first-child {
+  margin-bottom: 20px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.settings-button {
+  display: flex;
+  justify-content: center;
 }
 /* ------------ Media Queries 768px -------------- */
 
