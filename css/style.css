@@ -298,11 +298,16 @@ main {
 
 .form-field {
   margin: 20px 0;
+  height: 35px;
+  border-color: rgba(79, 79, 79, 0.3);
+  border-radius: 5px;
 }
 
 .form-area {
   height: 100px;
   margin-bottom: 20px;
+  border-color: rgba(79, 79, 79, 0.3);
+  border-radius: 5px;
 }
 
 .button-primary{
