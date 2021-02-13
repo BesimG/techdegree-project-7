@@ -50,9 +50,9 @@ header img {
   margin: 0 5px 0 5px;
 }
 
-header h3 {
-  /* margin-top: 10px; */
-}
+/* header h3 {
+  margin-top: 10px;
+} */
 
 nav a:nth-of-type(1) {
   margin-left: 0;
@@ -296,19 +296,45 @@ main {
   padding: 0 10px;
 }
 
-.widget-container:first-child {
+.form-field {
+  margin: 20px 0;
+}
+
+.form-area {
+  height: 100px;
   margin-bottom: 20px;
 }
 
-.form-field {
+.button-primary{
+  width: 45%;
+  height: 35px;
+  margin: auto;
+  background-color: rgb(102, 102, 155);
+  color: white; 
+  border-radius: 5px;
+  border: none;
+}
+
+.button-disabled {
+  width: 45%;
+  height: 35px;
+  margin: auto;
+  background-color: rgb(189, 188, 188);
+  color: white; 
+  border-radius: 5px;
+  border: none;
+}
+.settings {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  padding: 0 10px;
+  margin-bottom: 20px;
 }
 
 .settings-button {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+
 }
 /* ------------ Media Queries 768px -------------- */
 
