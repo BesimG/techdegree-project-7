@@ -26,7 +26,7 @@ h2 {
 h3 {
   font-size: 13px;
   margin-right: 10px;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
 }
 
 header h3 {
@@ -35,7 +35,7 @@ header h3 {
 
 header .bell {
   height: 22px;
-  margin-top: 5px;
+  padding-top: 5px;
 }
 
 header p {
@@ -48,6 +48,10 @@ header img {
   height: 30px;
   width: 30px;
   margin: 0 5px 0 5px;
+}
+
+header h3 {
+  /* margin-top: 10px; */
 }
 
 nav a:nth-of-type(1) {
@@ -94,6 +98,7 @@ header {
 /* ---- Navigation ---- */
 nav {
   height: 40px;
+  padding-top: 5px;
   grid-area: nav;
   display: flex;
   flex-direction: row;
@@ -129,6 +134,9 @@ main {
 .headline {
   margin-left: 15px;
 }
+
+/* graphs */
+
 .traffic,
 .daily,
 .mobile {
@@ -138,13 +146,13 @@ main {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin-bottom: 15px;
+  /* margin-bottom: 20px; */
 }
 
 .traffic-nav li {
   list-style: none;
   font-size: 13px;
-  margin-right: 7px;
+  margin-right: 10px;
 }
 
 .traffic-nav-link:nth-of-type(3){
@@ -156,16 +164,20 @@ main {
 
 .widget-container-full {
   background-color: lightblue;
+  margin-top: 20px;
 }
 
 .widget-container-half {
   background-color: tomato;
+  margin-top: 20px;
 }
+/* social stats */
 
 .social-stats {
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   justify-content: space-around;
+  margin-top: 20px;
 }
 
 .social-container {
@@ -177,6 +189,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-basis: 33.333%;
 }
 
 .social-container:last-of-type {
@@ -213,20 +226,22 @@ main {
   font-weight: 100;
   font-size: 24px;
 }
+/* members & recent activity */
+
+/* section .members:first-child {
+  margin-top: 10px;
+} */
 
 .members,
 .recent-activity {
   display: flex;
   flex-direction: column;
-  margin-left: 10px;
-  margin-bottom: 20px;
+  padding-top: 20px;
+  margin: 0 10px 20px 10px;
+  /* margin-left: 10px;
+  margin-bottom: 20px; */
   border-top: 1px solid rgba(79, 79, 79, 0.3);
   font-size: 11px;
-}
-
-.members h3,
-.recent-activity h3 {
-  margin: 20px 0;
 }
 
 .profile-image {
@@ -234,11 +249,23 @@ main {
   margin-bottom: 10px;
   border-radius: 50%;
 }
+.profile-image {
+  margin-top: 10px;
+}
 
 .members-text,
 .activity-text {
   margin-left: 5px;
   margin-right: auto;
+}
+.activity-text {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.activity-text p:last-child {
+  margin-right: 10px;
 }
 
 .members-text a {
@@ -263,10 +290,10 @@ main {
 }
 
 .widget-container {
-  width: 90%;
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
+  padding: 0 10px;
 }
 
 .widget-container:first-child {
