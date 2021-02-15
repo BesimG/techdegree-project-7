@@ -132,6 +132,7 @@ main {
   height: 50px;
   align-items: center;
 }
+
 .main-header-search {
   flex: 1;
   height: 100%;
@@ -239,10 +240,6 @@ main {
   font-size: 24px;
 }
 /* members & recent activity */
-
-/* section .members:first-child {
-  margin-top: 10px;
-} */
 
 .members,
 .recent-activity {
@@ -395,6 +392,10 @@ nav a img {
 main {
   display: grid;
   grid-template-columns: 50%;
+}
+
+.alert {
+  background-color: green;
 }
 
 /* both col */
