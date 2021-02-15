@@ -381,23 +381,25 @@ main {
 /* ---- Header ---- */
 
 /* ---- Navigation ---- */
-
+nav {
+  flex-direction: column;
+  justify-content: flex-start;
+  justify-items: center;
+  height: 100%;
+}
+nav a img {
+  margin-left: 0;
+  margin-bottom: 10px;
+}
 /* ---- Main ---- */
 main {
   display: grid;
   grid-template-columns: 50%;
 }
 
-.widget-container-full {
-  width: 90vw;
-}
-
-.widget-container-half {
-  width: 90vw;
-}
-
 /* both col */
-.traffic {
+.traffic,
+.social-section {
   grid-column: 1 / span 2;
 }
 
