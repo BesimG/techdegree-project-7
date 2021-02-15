@@ -70,7 +70,18 @@ section h3 {
 /* ================================= 
   Base Layout Styles
 ==================================== */
+.grid-container {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "header" 
+    "nav" 
+    "main";
+}
+
 /* ---- Header ---- */
+
 header {
   height: 45px;
   grid-area: header;
@@ -108,15 +119,7 @@ nav {
 }
 
 /* ---- Main ---- */
-.grid-container {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: auto;
-  grid-template-areas: 
-    "header" 
-    "nav" 
-    "main";
-}
+
 
 main {
   grid-area: main;
@@ -126,9 +129,17 @@ main {
 
 .main-header {
   display: flex;
-  justify-content: space-between;
-  margin-top: 15px;
-  margin-bottom: 20px;
+  height: 50px;
+  align-items: center;
+}
+.main-header-search {
+  flex: 1;
+  height: 100%;
+  background: rgb(189, 188, 188);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border-bottom-left-radius: 10px;
 }
 
 .headline {
@@ -205,7 +216,6 @@ main {
 
 .social-svg {
   height: 30px;
-  justify-content: flex;
   /* fill: white; */
 }
 
@@ -339,7 +349,6 @@ main {
 .settings-button {
   display: flex;
   justify-content: space-around;
-
 }
 /* ------------ Media Queries 768px -------------- */
 
@@ -348,6 +357,60 @@ main {
 ==================================== */
 
 @media (min-width: 768px)
+{
+
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+  .grid-container {
+    display: grid;
+    grid-template-columns: 55px 1fr;
+    grid-template-areas: 
+      "header header" 
+      "nav main";
+  }
+
+/* ---- Header ---- */
+
+/* ---- Navigation ---- */
+
+/* ---- Main ---- */
+.main {
+  grid-template-columns: 50%;
+}
+
+/* both col */
+.traffic,
+.social-stats {
+  grid-column: 1 / span 2;
+}
+/* left col */
+.daily, 
+.members,
+.message {
+  grid-column: 1 / span 1;
+}
+/* right col */
+.mobile,
+.activity,
+.settings {
+  grid-column: 2 / span 1;
+}
+/* ---- Layout Containers ---- */
+
+
+/* ---- Page Elements ---- */
+
+
+}
+
+@media (min-width: 1024px)
 {
 
 /* ================================= 
