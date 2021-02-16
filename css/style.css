@@ -389,6 +389,18 @@ nav a img {
   margin-bottom: 10px;
 }
 /* ---- Main ---- */
+
+/* code snippet from amber */
+/* main {
+  display: grid;
+  grid-template-rows: 80px 1fr;
+  grid-template-columns: 80px 1fr;
+  grid-template-areas:
+      "header header"
+      "nav main";
+} */
+/* end of code snippet */
+
 main {
   display: grid;
   grid-template-columns: 50%;
@@ -399,6 +411,7 @@ main {
 }
 
 /* both col */
+.main-header,
 .traffic,
 .social-section {
   grid-column: 1 / span 2;
@@ -418,6 +431,46 @@ main {
   grid-column: 2 / span 1;
 }
 
+.social-container {
+  padding: 15px 12px;
+  flex-direction: row;
+  flex-basis: 28.333%;
+  justify-content: center;
+}
+
+.social-text {
+  margin-left: 10px;
+}
+
+.social-image {
+  background: rgb(144, 144, 255);
+  border-radius: 50%;
+  padding: 7px;
+  display: flex;
+}
+
+.social-svg {
+  height: 30px;
+  /* fill: white; */
+}
+
+.social-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-text p:first-child {
+  font-weight: 700;
+  font-size: 12px;
+  margin: 4px 0;
+}
+
+.social-text p:last-child {
+  font-weight: 100;
+  font-size: 24px;
+}
 /* ---- Layout Containers ---- */
 
 
