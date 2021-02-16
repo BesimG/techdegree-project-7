@@ -120,7 +120,6 @@ nav {
 
 /* ---- Main ---- */
 
-
 main {
   grid-area: main;
   display: flex;
@@ -154,6 +153,9 @@ main {
 .mobile {
   margin-bottom: 20px;
 }
+
+
+
 .traffic-nav {
   display: flex;
   justify-content: flex-end;
@@ -375,7 +377,17 @@ main {
       "nav main";
   }
 
-/* ---- Header ---- */
+/* ---- Header ---- */ 
+h2.headline {
+  margin-right: 15px;
+}
+
+.main-header-search {
+  border-bottom-left-radius: 0px;
+}
+.main-header-search input {
+  margin-right: 10px;
+}
 
 /* ---- Navigation ---- */
 nav {
@@ -385,8 +397,9 @@ nav {
   height: 100%;
 }
 nav a img {
-  margin-left: 0;
+  margin-top: 10px;
   margin-bottom: 10px;
+  margin-left: 0;
 }
 /* ---- Main ---- */
 
