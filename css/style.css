@@ -53,10 +53,6 @@ header img {
   margin: 0 5px 0 5px;
 }
 
-/* header h3 {
-  margin-top: 10px;
-} */
-
 nav a:nth-of-type(1) {
   margin-left: 0;
   text-decoration: underline;
@@ -109,6 +105,7 @@ header {
 .st0 {
   fill: white;
 }
+
 /* ---- Navigation ---- */
 nav {
   height: 40px;
@@ -119,6 +116,18 @@ nav {
   justify-content: center;
   align-items: center;
   background-color: rgb(102, 102, 155);
+}
+
+nav a {
+  width: 100%;
+  text-align: center;
+}
+
+nav a .dashboard {
+  width: 60%;
+  text-align: center;
+  border: 3px solid transparent;
+  border-bottom: 2px solid greenyellow;
 }
 
 /* ---- Main ---- */
@@ -157,11 +166,16 @@ main {
   margin-bottom: 20px;
 }
 
+.traffic-header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
 .traffic-nav {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  /* margin-bottom: 20px; */
 }
 
 .traffic-nav li {
@@ -180,13 +194,11 @@ main {
 .widget-container-full {
   background-color: lightblue;
   margin-top: 20px;
-  /* width: 95vw; */
 }
 
 .widget-container-half {
   background-color: tomato;
   margin-top: 20px;
-  /* width: 95vw; */
 }
 /* social stats */
 
@@ -280,10 +292,6 @@ main {
   padding-left: 20px;
 }
 
-/* .activity-text p:last-child {
-  margin-right: 10px;
-} */
-
 .members-text a {
   text-decoration: none;
 }
@@ -304,6 +312,8 @@ main {
 .activity-container:last-of-type {
   border-bottom: none;
 }
+
+/* messages & settings */
 
 .widget-container {
   display: flex;
@@ -356,6 +366,14 @@ main {
   display: flex;
   justify-content: space-around;
 }
+
+input::placeholder,
+textarea::placeholder,
+select {
+  font-weight: 100;
+  color: rgba(79, 79, 79, 0.5);
+}
+
 /* ------------ Media Queries 768px -------------- */
 
 /* ================================= 
@@ -401,15 +419,20 @@ nav {
   justify-items: center;
   height: 100%;
 }
+
+nav a .dashboard {
+  width: 100%;
+  text-align: center;
+  border: 3px solid transparent;
+  border-left: 2px solid greenyellow;
+}
+
 nav a img {
   margin-top: 10px;
   margin-bottom: 10px;
   margin-left: 0;
 }
 
-/* nav:first-child {
-  border-left: 2px solid black;
-} */
 /* ---- Main ---- */
 
 /* code snippet from amber */
