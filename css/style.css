@@ -147,7 +147,7 @@ main {
 .main-header-search {
   flex: 1;
   height: 100%;
-  background: rgb(189, 188, 188);
+  background: rgb(245, 245, 245);
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -158,7 +158,7 @@ main {
   margin-left: 15px;
 }
 
-/* graphs */
+/*---- graphs ----*/
 
 .traffic,
 .daily,
@@ -200,7 +200,7 @@ main {
   background-color: tomato;
   margin-top: 20px;
 }
-/* social stats */
+/*---- social stats ----*/
 
 .social-stats {
   display: flex;
@@ -212,7 +212,7 @@ main {
 .social-container {
   background-color: rgb(245, 245, 245);
   margin-right: 16px;
-  border: 1px solid rgb(79, 79, 79);
+  border: 1px solid rgb(189, 188, 188);
   padding: 15px 12px;
   border-radius: 7px;
   display: flex;
@@ -254,7 +254,7 @@ main {
   font-weight: 100;
   font-size: 24px;
 }
-/* members & recent activity */
+/*---- members & recent activity ----*/
 
 .members,
 .recent-activity {
@@ -313,7 +313,7 @@ main {
   border-bottom: none;
 }
 
-/* messages & settings */
+/*---- messages & settings ----*/
 
 .widget-container {
   display: flex;
@@ -476,7 +476,7 @@ main {
   background-color: green;
 }
 
-/* graphs */
+/*---- graphs ----*/
 
 .widget-container-full,
 .widget-container-half {
@@ -487,7 +487,7 @@ main {
   border-right: 1px solid rgba(79, 79, 79, 0.3);
 }
 
-/* social stats */
+/*---- social stats ----*/
 
 .social-section {
   border-bottom: 1px solid rgba(79, 79, 79, 0.3);
@@ -512,7 +512,7 @@ main {
   color: black;
 }
 
-/* members & recent activity */
+/*---- members & recent activity ----*/
 
 .members,
 .recent-activity {
@@ -561,11 +561,54 @@ section.settings {
     
 /* ---- Navigation ---- */
 
-/* ---- Layout Containers ---- */
+
+/* ---- header ---- */
+
+/* ---- main ---- */
+
+/* ---- graphs ---- */
+
+/* ---- header ---- */
 
 
-/* ---- Page Elements ---- */
+/*---- social stats ----*/
 
+.social-container {
+  /* background-color: rgb(245, 245, 245);
+  margin-right: 16px;
+  border: 1px solid rgb(189, 188, 188);
+  padding: 15px 12px;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 33.333%; */
+}
+
+.social-image {
+  background: rgb(144, 144, 255);
+  border-radius: 50%;
+  padding: 10px;
+  display: flex;
+}
+
+.social-svg {
+  height: 35px;
+  /* fill: white; */
+}
+
+.social-text p:first-child {
+  font-weight: 700;
+  font-size: 14px;
+  margin: 4px 0;
+}
+
+.social-text p:last-child {
+  font-weight: 100;
+  font-size: 30px;
+}
+
+/*---- members & recent activity ----*/
 
 }
 
