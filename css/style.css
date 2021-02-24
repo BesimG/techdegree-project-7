@@ -362,6 +362,10 @@ main {
   margin-bottom: 20px;
 }
 
+label.switch-light .switch-candy {
+  
+}
+
 .settings-button {
   display: flex;
   justify-content: space-around;
@@ -472,9 +476,6 @@ main {
   grid-column: 2 / span 1;
 }
 
-.alert {
-  background-color: green;
-}
 
 /*---- graphs ----*/
 
