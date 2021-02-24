@@ -192,13 +192,13 @@ main {
 }
 
 .widget-container-full {
-  background-color: lightblue;
   margin-top: 20px;
+  padding-bottom: 30px;
 }
 
 .widget-container-half {
-  background-color: tomato;
   margin-top: 20px;
+  padding-bottom: 30px;
 }
 /*---- social stats ----*/
 
