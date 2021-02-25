@@ -168,7 +168,7 @@ display: flex;
 }
 
 .alert-banner {
-  flex-direction: row;
+  text-align: center;
 }
 
 /*---- graphs ----*/
@@ -487,6 +487,7 @@ main {
 
 /* both col */
 .main-header,
+.alert,
 .traffic,
 .social-section {
   grid-column: 1 / span 2;
@@ -506,6 +507,15 @@ main {
   grid-column: 2 / span 1;
 }
 
+/*---- alert ----*/
+
+.alert-banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px;
+}
 
 /*---- graphs ----*/
 
