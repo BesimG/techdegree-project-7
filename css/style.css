@@ -156,9 +156,17 @@ main {
 
 .headline {
   margin-left: 15px;
+  margin-right: 10px;
 }
 
+/*---- alert ----*/
+
 /*---- graphs ----*/
+
+/* when resizing the window, this will keep the charts correctly sized without the need to constantly refresh the page */
+canvas {
+  max-width: 100%;
+}
 
 .traffic,
 .daily,
@@ -362,8 +370,20 @@ main {
   margin-bottom: 20px;
 }
 
-label.switch-light .switch-candy {
-  
+label.switch-light.switch-candy {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+label.switch-light.switch-candy p{
+  padding-bottom: 10px;
+  margin: auto;
+}
+
+label.switch-light.switch-candy span{
+  width: 50%;
+  margin: auto;
 }
 
 .settings-button {
