@@ -1,6 +1,12 @@
-const alertBanner = document.getElementById("alert");
+// click event listener on bell icon
+
+notifications.addEventListener('click', () => {
+    
+});
 
 // create the html for the banner 
+
+const alertBanner = document.getElementById("alert");
 
 alertBanner.innerHTML = 
 `
