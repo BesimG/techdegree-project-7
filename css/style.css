@@ -161,6 +161,16 @@ main {
 
 /*---- alert ----*/
 
+#alert {
+background-color: rgb(102, 102, 155);
+color: white;
+display: flex;
+}
+
+.alert-banner {
+  flex-direction: row;
+}
+
 /*---- graphs ----*/
 
 /* when resizing the window, this will keep the charts correctly sized without the need to constantly refresh the page */
