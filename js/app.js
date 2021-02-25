@@ -1,7 +1,9 @@
 // click event listener on bell icon
 
-notifications.addEventListener('click', () => {
-    
+const notification = document.querySelector('.bell-notify-container');
+
+notification.addEventListener('click', () => {
+    alert("Traffic activity has been updated");
 });
 
 // create the html for the banner 
