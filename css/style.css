@@ -102,13 +102,33 @@ header {
 .light-h1 {
   color: white;
 }
+
+/* bell icon responds to this class */
 .st0 {
   fill: white;
+}
+
+@keyframes bell-icon-grow {
+  0% {
+    transform: scale(0);
+  }
+  30% {
+    transform: scale(1.1);
+  }
+  60% {
+    transform: scale(0.9);
+  }
+}
+
+.bell:hover {
+  animation: bell-icon-grow 1s ease-out backwards;
+  animation-delay: .1s;
 }
 
 header > div {
   position: relative;
 }
+
 #notifications {
   position: absolute;
   right: 2px;
@@ -417,22 +437,21 @@ canvas {
 }
 
 label.switch-light.switch-candy {
-  padding-top: 20px;
   display: flex;
-  flex-direction: row;
+  align-items: center;
+  margin-bottom: 10px;
 }
-
-label.switch-light.switch-candy p{
-  padding-bottom: 10px;
-  margin: auto;
+.switch-light.switch-candy p {
+  flex-basis: 200px;
+  font-size: 14px;
 }
-
-label.switch-light.switch-candy span{
-  width: 40%;
-  margin: auto;
-  border-radius: 50px;
+.switch-light span span {
+  width: 50px;
 }
-
+.switch-light.switch-candy > span,
+.switch-candy a {
+  border-radius: 25px;
+}
 .switch-candy a {
   z-index: 10;
 }
@@ -509,17 +528,6 @@ nav a img {
 }
 
 /* ---- Main ---- */
-
-/* code snippet from amber */
-/* main {
-  display: grid;
-  grid-template-rows: 80px 1fr;
-  grid-template-columns: 80px 1fr;
-  grid-template-areas:
-      "header header"
-      "nav main";
-} */
-/* end of code snippet */
 
 main {
   display: grid;
