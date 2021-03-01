@@ -496,8 +496,7 @@ label.switch-light.switch-candy {
 }
 
 #timezone {
-  margin-top: auto;
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
 
 .settings-button {
@@ -685,6 +684,9 @@ section.settings {
 
 /* ---- Settings ---- */
 
+#timezone {
+  margin: 33px 0;
+}
 
 }
 
