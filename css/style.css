@@ -210,9 +210,12 @@ main {
   border-bottom-left-radius: 10px;
 }
 
+.main-header-search input {
+  max-width: 175px;
+}
+
 .headline {
-  margin-left: 15px;
-  margin-right: 10px;
+  padding: 0 15px;
 }
 
 /*---- alert ----*/
@@ -248,7 +251,7 @@ canvas {
 
 .traffic-nav {
   display: flex;
-  justify-content: flex-end;
+  flex-wrap: wrap;
   align-items: center;
 }
 
@@ -445,6 +448,10 @@ form.widget-container {
   color: white; 
   border-radius: 5px;
   border: none;
+}
+
+.button-primary:nth-of-type(1) {
+  margin-right: 10px;
 }
 
 .settings h3 {
